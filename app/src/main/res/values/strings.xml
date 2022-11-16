@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fast Pick Drugs</string>
+    <string name="google_maps_api_key">AIzaSyDkxPXYQAsuN4BzTFLo4C6dU539GP7Bpxo</string>
+    <string name="title_activity_fragment._stores_fragment">fragment.StoresFragment</string>
+    <string name="access_token">pk.eyJ1IjoiYXRoZG9zOTkiLCJhIjoiY2tsbXV3dHhxMGQxdjJ2bnoyNTVjbWxpZCJ9.ZcD6r5AOI79Qy8zNUga2kg</string>
+
+</resources>

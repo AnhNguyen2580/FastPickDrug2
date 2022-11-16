@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    tools:context="com.finalproject.fastpickdrug.fragment.StoresFragment">
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/stores_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </com.google.android.gms.maps.MapView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_on_top_of_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="32dp"
+        tools:ignore="MissingConstraints" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/fab_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="83dp"
+        app:fab_addButtonColorNormal="@color/colorAccent"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/customFAB">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/openCameraButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/grey"
+            app:fab_icon="@drawable/ic_baseline_camera_24"
+            app:fab_size="mini"
+            app:fab_title="Open Camera" />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/openFilesButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/grey"
+            app:fab_icon="@drawable/ic_baseline_image_24"
+            app:fab_size="mini"
+            app:fab_title="Open Files" />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
+
+
